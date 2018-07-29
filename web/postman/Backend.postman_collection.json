@@ -57,6 +57,17 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "list_produits_par_categorie",
+			"request": {
+				"url": "http://backend.local/app_dev.php/categories/1/product",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
