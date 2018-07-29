@@ -8,6 +8,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -44,6 +45,20 @@ class Categorie {
         $this->nom = $nom;
 
         return $this;
+    }
+    /**
+     * @ORM\OneToMany(targetEntity="Produit", mappedBy="categorie", cascade={"persist"})
+     */
+    private $produits;
+
+    public function __construct()
+    {
+        $this->produits = new ArrayCollection();
+    }
+    
+    public function getProduits()
+    {
+        return $this->produits;
     }
     
 }

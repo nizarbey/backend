@@ -37,6 +37,26 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "create_produits",
+			"request": {
+				"url": "http://backend.local/app_dev.php/produits",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nom\": \"produit1\",\n  \"prix\": \"12,22\",\n  \"stock\": \"13\",\n  \"categorie\": \n\t{\n\t\t\"id\": 2,\n\t\t\"nom\": \"categorie2\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
