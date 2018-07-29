@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Backend",
+		"_postman_id": "c47274b2-4150-fad1-7acb-cae2791fe8a2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_categories",
+			"request": {
+				"url": "http://backend.local/app_dev.php/categories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nom\": \"categorie3\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
