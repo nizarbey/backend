@@ -26,6 +26,17 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "list_categories",
+			"request": {
+				"url": "http://backend.local/app_dev.php/categories",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

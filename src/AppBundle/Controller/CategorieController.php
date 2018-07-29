@@ -32,4 +32,16 @@ class CategorieController extends Controller {
 
         return $response;
     }
+    /**
+     * @Route("/categories", name="categories_list")
+     * @Method({"GET"})
+     */
+    public function listCategorieAction()
+    {   
+        $categories = $this->getDoctrine()->getRepository('AppBundle:Categorie')->findAll();
+        $data = $this->get('jms_serializer')->serialize($categories, 'json');
+        $response = new Response($data);
+        $response->headers->set('Content-Type', 'application/json');
+        return $response;
+    }
 }
